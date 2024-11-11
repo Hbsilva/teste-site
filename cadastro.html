@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastrar Atividades</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    </head>
+<body>
+    <div class="container">
+        <h1>Cadastrar Atividade</h1>
+        <input type="text" id="location" placeholder="Local">
+        <input type="date" id="date">
+        <input type="time" id="time">
+        <select id="activity">
+            <option value="Corrida ao ar livre">Corrida ao ar livre</option>
+            <option value="Futebol">Futebol</option>
+            <option value="Voleibol">Voleibol</option>
+            <option value="Futsal">Futsal</option>
+            <option value="Caminhada">Caminhada</option>
+            <option value="Escalada">Escalada</option>
+            <option value="Musculação">Musculação</option>
+            <option value="Treino Funcional">Treino Funcional</option>
+            <option value="Ciclismo">Ciclismo</option>
+        </select>
+        <input type="text" id="guests" placeholder="Convidados">
+        <button onclick="addActivity()">Adicionar Atividade</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
