@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de amigos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Amigos</h1>
+        <ul class="friend-list">
+            <li class="friend-item">
+                <span>Amigo 1</span>
+                <button class="icon-btn" onclick="openChat()">💬</button>
+            </li>
+            <li class="friend-item">
+                <span>Amigo 2</span>
+                <button class="icon-btn" onclick="openChat()">💬</button>
+            </li>
+            <!-- Mais amigos -->
+        </ul>
+        <button class="floating-btn" onclick="location.href='cadastroAmigos.html'">+</button>
+    </div>
+    <script>
+        function openChat() {
+            location.href = 'chat.html';
+        }
+    </script>
+</body>
+</html>
