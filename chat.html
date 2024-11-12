@@ -13,17 +13,16 @@
         <div class="chat-box">
             <div class="message received">Oi, tudo bem?</div>
             <div class="message sent">Tudo sim! E você?</div>
-            <!-- Mais mensagens -->
         </div>
         <div class="chat-input">
             <input type="text" id="message" placeholder="Digite sua mensagem..." class="input-field">
             <button onclick="sendMessage()" class="btn">Enviar</button>
         </div>
+        <button class="home-floating-btn" onclick="location.href='home.html'">🏠</button>
     </div>
     <script>
         function sendMessage() {
             const message = document.getElementById("message").value;
-            // Lógica para enviar mensagem
             alert("Mensagem enviada: " + message);
         }
     </script>
