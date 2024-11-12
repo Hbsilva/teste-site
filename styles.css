@@ -5,6 +5,7 @@
     padding: 0;
     font-family: Arial, sans-serif;
 }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -15,6 +16,7 @@ body {
     min-height: 100vh;
     background-color: #f0f0f0;
 }
+
 .container {
     width: 90%;
     max-width: 400px;
@@ -22,11 +24,13 @@ body {
     padding: 20px;
     text-align: center;
 }
-h1 {
+
+h1, h2 {
     font-size: 24px;
     margin-bottom: 20px;
     color: #333;
 }
+
 button {
     width: 100%;
     padding: 10px;
@@ -37,9 +41,11 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
+
 button:hover {
     background-color: #007BFF;
 }
+
 .input-field {
     width: 100%;
     padding: 10px;
@@ -48,6 +54,7 @@ button:hover {
     border-radius: 5px;
     font-size: 16px;
 }
+
 .btn {
     width: 100%;
     padding: 10px;
@@ -58,9 +65,76 @@ button:hover {
     font-size: 16px;
     cursor: pointer;
 }
+
 .btn:hover {
     background-color: #0056b3;
 }
+
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #007BFF;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+}
+
+.floating-btn:hover {
+    background-color: #0056b3;
+}
+
+.friend-list, .group-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.friend-item, .group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.chat-box {
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.sent {
+    background-color: #DCF8C6;
+    text-align: right;
+}
+
+.received {
+    background-color: #FFF;
+    text-align: left;
+}
+
 .link {
     color: #007BFF;
     text-decoration: none;
@@ -69,7 +143,6 @@ button:hover {
     text-decoration: underline;
 }
 
-/* Estilos para a lista de atividades */
 #activity-list {
     list-style-type: none;
     padding: 0;
