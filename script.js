@@ -139,12 +139,13 @@ function registerUser() {
     const sobrenome = document.getElementById('sobrenome').value;
     const dataNascimento = document.getElementById('dataNascimento').value;
     const endereco = document.getElementById('endereco').value;
+    const senha = document.getElementById('senha').value;
 
     if (nome && sobrenome && dataNascimento && endereco) {
-        const userData = { nome, sobrenome, dataNascimento, endereco };
+        const userData = { nome, sobrenome, dataNascimento, endereco, senha};
         localStorage.setItem('user', JSON.stringify(userData));
         alert("Usuário cadastrado com sucesso!");
-        window.location.href = 'login.html';
+        window.location.href = 'index.html';
     } else {
         alert("Por favor, preencha todos os campos.");
     }
