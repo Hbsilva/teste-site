@@ -15,6 +15,14 @@
     </div>
     <button class="home-floating-btn" onclick="location.href='home.html'">🏠</button>
     <script src="script.js"></script>
+    <script src="models.js"></script>
+    <script src="views.js"></script>
+    <script src="controllers.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            AtividadeController.carregarAtividades();
+        });
+    </script>
     <footer class="app-footer">
         <p>Versão: 1.0.0</p>
         <p>Nome da Aplicação: Mexa-se</p>
