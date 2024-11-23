@@ -17,6 +17,18 @@
         <p>Não possui uma conta? <a href="cadastroUsuario.html" class="link">Cadastre-se</a></p>
     </div>
     <script src="script.js"></script>
+    <script src="models.js"></script>
+    <script src="views.js"></script>
+    <script src="controllers.js"></script>
+    <script>
+        const loginForm = document.getElementById('loginForm');
+        loginForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const nome = document.getElementById('username').value;
+            const senha = document.getElementById('password').value;
+            LoginController.realizarLogin(nome, senha);
+        });
+    </script>
     <footer class="app-footer">
         <p>Versão: 1.0.0</p>
         <p>Nome da Aplicação: Mexa-se</p>
